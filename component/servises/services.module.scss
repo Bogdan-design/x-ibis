@@ -1,0 +1,17 @@
+.services {
+  background-color: #FFFFFF;
+
+  .description {
+    display: flex;
+    flex-direction: column;
+
+    padding: 165px;
+    .cards {
+      display: flex;
+      align-self: stretch;
+      gap: 30px;
+      flex-wrap: wrap;
+
+    }
+  }
+}

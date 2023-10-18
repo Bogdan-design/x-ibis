@@ -3,6 +3,8 @@ import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
 import {ReactNode} from "react";
 import {Header} from "@/component/layout/header/header";
+import Image from "next/image";
+import abstraction from '@/assest/icon/abstraction.png'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -18,8 +20,18 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-        <body className={inter.className}>
-        <div>
+        <body className={`${inter.className}`}>
+        <Image style={{
+            zIndex:'-1',
+            position:"absolute",
+            width:'100%',height:'100%',
+            backgroundColor:'lightgray',
+            opacity:'85%',
+            backgroundSize:'auto',
+            backgroundPosition:'center',
+            backgroundRepeat:'no-repeat'
+        }} src={abstraction} alt={''}/>
+        <div style={{display:"flex", flexDirection:'column',alignItems:'center'}}>
             <Header/>
             {children}
         </div>

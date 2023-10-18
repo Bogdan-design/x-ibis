@@ -1,9 +1,9 @@
 import React from "react";
-import {Bubble} from '@/assest/icon/bubble'
-import {ReactComponent as SheldTick} from '@/assest/icon/sheld-tick'
-import {ReactComponent as Modules} from '@/assest/icon/modules'
-import {ReactComponent as Rocket} from '@/assest/icon/rocket'
-import {ReactComponent as Around} from '@/assest/icon/360-degrees'
+import bubble from '@/assest/icon/bubble.svg'
+import shieldTick from '@/assest/icon/shield-tick.svg'
+import modules from '@/assest/icon/modules.svg'
+import rocket from '@/assest/icon/rocket.svg'
+import around from '@/assest/icon/360-degrees.svg'
 
 
 export const links = [
@@ -29,26 +29,31 @@ export const whatWeDoData = [
     {
         title: 'IT Audit',
         description: 'We enable businesses to fully grasp and enhance their information systems.',
-        icon: React.createElement(Bubble)
+        icon: bubble,
+        link:'/'
     },
     {
         title: 'Security',
         description: 'Focused on safeguarding your business, we offer complex cyber security solutions.',
-        icon: React.createElement(SheldTick)
+        icon: shieldTick,
+        link:'/'
     },
     {
         title: 'Ensuring Reliability infra',
         description: 'Our specialty lies in creating a dependable IT framework for efficient operations.',
-        icon: React.createElement(Modules)
+        icon: modules,
+        link:'/'
     },
     {
         title: 'IT Administration',
         description: 'Our professional IT administration keeps your tech running smoothly.',
-        icon: React.createElement(Rocket)
+        icon: rocket,
+        link:'/'
     },
     {
         title: 'Modern Solutions',
         description: 'Specializing in next-level business solutions, we optimize efficiency.',
-        icon: React.createElement(Around)
+        icon: around,
+        link:'/'
     },
 ] as const
