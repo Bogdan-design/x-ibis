@@ -1,0 +1,49 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  .container {
+    max-width: 1440px;
+    display: inline-flex;
+    padding: 120px 165px;
+    align-items: flex-start;
+    gap: 95px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 36px;
+
+      .title {
+        color: #333;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        text-transform: uppercase;
+        align-self: stretch;
+        margin: 0;
+
+      }
+
+      .description {
+        display: flex;
+      }
+
+      .ourContact {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+
+    .form {
+      display: flex;
+      width: 475px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 48px;
+
+    }
+  }
+}

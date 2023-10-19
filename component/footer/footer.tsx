@@ -1,11 +1,12 @@
-import React from 'react';
-import Logo from '@/assest/icon/logo'
+import Logo from "@/assest/icon/logo";
 import {links} from "@/lid/data";
 import Link from "next/link";
-import s from './header.module.scss'
-import Global from "@/assest/icon/global";
+import Linkedin from "@/assest/icon/linkedin";
+import Arrow from "@/assest/icon/arrow";
+import React from "react";
+import s from './footer.module.scss'
 
-export const Header = () => {
+export const Footer = () => {
     return (
         <header className={s.header}>
             <Logo style={{width:'90px', height:'18px'}}/>
@@ -19,7 +20,8 @@ export const Header = () => {
                         )}
                     </ul>
                 </nav>
-                <Global/>
+                <Linkedin/>
+                <Arrow/>
             </div>
         </header>
     );

@@ -1,4 +1,3 @@
-import * as React from "react"
 import { SVGProps } from "react"
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
     <svg
@@ -8,13 +7,16 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
         fill="none"
         {...props}
     >
-        <path
-            stroke="#E75934"
+        <g
+            stroke="#514E4E"
             strokeLinecap="round"
             strokeLinejoin="round"
+            strokeMiterlimit={10}
             strokeWidth={1.5}
-            d="M22 5c0-1.657-5.03-3-10-3S2 3.343 2 5m20 0v14c0 1.5-3 3-7 3V8c4 0 7-1.694 7-3ZM2 5v14c0 1.5 4 3 7 3V8C5.5 8 2 6.306 2 5Z"
-        />
+        >
+            <path d="M17 20.5H7c-3 0-5-1.5-5-5v-7c0-3.5 2-5 5-5h10c3 0 5 1.5 5 5v7c0 3.5-2 5-5 5Z" />
+            <path d="m17 9-3.13 2.5c-1.03.82-2.72.82-3.75 0L7 9" />
+        </g>
     </svg>
 )
 export default SvgComponent

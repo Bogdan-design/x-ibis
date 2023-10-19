@@ -1,0 +1,19 @@
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 165px;
+  align-self: stretch;
+  background: #FAFAFA;
+  .title{
+    align-self: stretch;
+    display: flex;
+  }
+  .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+  }
+}

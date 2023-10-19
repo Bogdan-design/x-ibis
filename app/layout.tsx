@@ -21,16 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${inter.className}`}>
-        <Image style={{
-            zIndex:'-1',
-            position:"absolute",
-            width:'100%',height:'100%',
-            backgroundColor:'lightgray',
-            opacity:'85%',
-            backgroundSize:'auto',
-            backgroundPosition:'center',
-            backgroundRepeat:'no-repeat'
-        }} src={abstraction} alt={''}/>
+
         <div style={{display:"flex", flexDirection:'column',alignItems:'center'}}>
             <Header/>
             {children}

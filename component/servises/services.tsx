@@ -5,6 +5,7 @@ import s from './services.module.scss'
 import {Clients} from "@/component/clients/clients";
 import sprite from "@/assest/icon/sprite.svg";
 import Image from "next/image";
+import {images} from "next/dist/build/webpack/config/blocks/images";
 
 export const Services = () => {
     return (

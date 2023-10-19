@@ -1,6 +1,9 @@
 .homePage{
   height: 100vh;
   z-index: -1;
+  padding: 60px 165px;
+  display: flex;
+  align-items: center;
   .description{
     top:200px;
     left: 165px;
@@ -11,12 +14,12 @@
     gap: 48px;
     h1{
       color:#333;
-      font-family: Monument Extended;
       font-size: 40px;
       font-style: normal;
       font-weight: 300;
       line-height: 140%;
       text-transform: uppercase;
+      align-self: stretch;
     }
   }
 
