@@ -21,8 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${inter.className}`}>
-
-        <div style={{display:"flex", flexDirection:'column',alignItems:'center'}}>
+        <div>
             <Header/>
             {children}
         </div>

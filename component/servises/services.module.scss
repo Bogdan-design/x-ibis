@@ -1,17 +1,33 @@
 .services {
-  background-color: #FFFFFF;
 
-  .description {
+  .container{
     display: flex;
-    flex-direction: column;
-
-    padding: 165px;
-    .cards {
+    justify-content: center;
+    background-color: #FFFFFF;
+    .description {
+      max-width: 1440px;
+      width: 100%;
       display: flex;
-      align-self: stretch;
-      gap: 30px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 165px;
+      .title{
+        margin: 30px 0;
+        color: #333;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
 
+      .cards {
+        display: flex;
+        align-self: stretch;
+        gap: 30px;
+        flex-wrap: wrap;
+
+      }
     }
   }
+
 }

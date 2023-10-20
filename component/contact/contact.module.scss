@@ -1,8 +1,11 @@
 .contact {
   display: flex;
   justify-content: center;
+  background: #FAFAFA;
+
   .container {
     max-width: 1440px;
+    width: 100%;
     display: inline-flex;
     padding: 120px 165px;
     align-items: flex-start;
@@ -11,10 +14,11 @@
     .text {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+
       gap: 36px;
 
       .title {
+
         color: #333;
         font-size: 24px;
         font-style: normal;
@@ -27,11 +31,25 @@
       }
 
       .description {
-        display: flex;
+        margin: 0;
+        align-self: stretch;
+        color: #514E4E;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 165%;
       }
 
       .ourContact {
         display: flex;
+        p{
+          display: flex;
+          align-items: center;
+          margin: 0;
+          gap:16px;
+          color: #333;
+          font-size: 16px;
+          text-transform: lowercase;
+        }
         flex-direction: column;
         gap: 24px;
       }
@@ -43,6 +61,21 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 48px;
+
+      input,
+      label,
+      textarea {
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #333333;
+
+
+        &:active {
+          border: none;
+
+        }
+      }
 
     }
   }

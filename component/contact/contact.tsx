@@ -1,20 +1,20 @@
 'use client'
 import React from 'react';
-import s from './contact.module.scss'
 import {SubmitBtm} from "@/component/contact/submitBtm";
 import Call from '@/assest/icon/call'
 import Location from '@/assest/icon/location'
 import Sms from '@/assest/icon/sms'
+import s from './contact.module.scss'
 
 export const Contact = () => {
     return (
-        <section className={s.contact}>
+        <section id={'contact'} className={s.contact}>
             <div className={s.container}>
                 <div className={s.text}>
                     <h2 className={s.title}>
                         Get in touch
                     </h2>
-                    <p className={s.deskription}>
+                    <p className={s.description}>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Get in touch to learn more about our IT infrastructure services
                         and how we can help you achieve your business goal.
@@ -31,20 +31,22 @@ export const Contact = () => {
                         </p>
                     </div>
                 </div>
-                <div className={s.formContainer}>
                     <form className={s.form} action={async (formData) => {
                         // await sendEmail(formData)
                     }}>
                         <input name='senderNname'
+                               id={'text'}
                                type='text'
                                maxLength={500}
                                placeholder='name'
                                required/>
+
                         <input name='senderEmail'
                                type='email'
                                maxLength={500}
                                placeholder='email'
                                required/>
+
                         <input name='phoneNumber'
                                type='phone'
                                maxLength={15}
@@ -56,7 +58,6 @@ export const Contact = () => {
                                   required/>
                         <SubmitBtm/>
                     </form>
-                </div>
             </div>
         </section>
     );

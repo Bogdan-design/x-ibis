@@ -1,24 +1,23 @@
 import React from 'react';
 import {whatWeDoData} from "@/lid/data";
 import {Card} from "@/component/card/card";
-import s from './services.module.scss'
 import {Clients} from "@/component/clients/clients";
-import sprite from "@/assest/icon/sprite.svg";
-import Image from "next/image";
-import {images} from "next/dist/build/webpack/config/blocks/images";
+import s from './services.module.scss'
 
 export const Services = () => {
     return (
         <section className={s.services}>
             <Clients/>
-            <div className={s.description}>
-                <h2>What we do</h2>
-                <div className={s.cards}>
-                    {whatWeDoData.map((s, i) => (
-                       <React.Fragment key={i}>
-                           <Card {...s}/>
-                       </React.Fragment>
-                    ))}
+            <div className={s.container}>
+                <div className={s.description}>
+                    <h2 className={s.title}>What we do</h2>
+                    <div className={s.cards}>
+                        {whatWeDoData.map((s, i) => (
+                            <React.Fragment key={i}>
+                                <Card {...s}/>
+                            </React.Fragment>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

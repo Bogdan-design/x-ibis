@@ -1,21 +1,35 @@
 .header {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
   display: flex;
+  justify-content: center;
   height: 80px;
-  padding: 28px 165px;
-  justify-content: space-between;
-  align-items: center;
-  .options{
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 28px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .options {
     display: flex;
     align-items: center;
     gap: 48px;
-    .links{
+
+    .links {
       display: flex;
       align-items: flex-start;
       gap: 48px;
       .link {
+        color: #333333;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
         text-decoration: none;
       }
     }
