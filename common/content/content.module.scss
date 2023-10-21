@@ -1,0 +1,24 @@
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom:24px;
+  scroll-behavior: smooth;
+  &::after {
+    content: ' ';
+    border-bottom: 1px solid #514E4E;
+    padding-top: 24px;
+  }
+}
+
+.titleOption {
+  margin: 0;
+  font-weight: bold;
+
+
+}
+
+.description {
+  margin: 0;
+}

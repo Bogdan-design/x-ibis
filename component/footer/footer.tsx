@@ -22,7 +22,7 @@ export const Footer = () => {
                             )}
                         </ul>
                     </nav>
-                    <Link href={'https://www.linkedin.com/'}>
+                    <Link href={'https://www.linkedin.com/in/x-ibis-b53434293/'}>
                         {/*<Linkedin/>*/}
                         <Image src={linkedin} alt={''}/>
                     </Link>

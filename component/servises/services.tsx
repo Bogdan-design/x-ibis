@@ -1,12 +1,12 @@
 import React from 'react';
 import {whatWeDoData} from "@/lid/data";
-import {Card} from "@/component/card/card";
+import {Card} from "@/component/servises/card/card";
 import {Clients} from "@/component/clients/clients";
 import s from './services.module.scss'
 
 export const Services = () => {
     return (
-        <section className={s.services}>
+        <section id={'services'} className={s.services}>
             <Clients/>
             <div className={s.container}>
                 <div className={s.description}>

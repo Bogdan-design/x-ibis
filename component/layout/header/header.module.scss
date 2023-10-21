@@ -5,6 +5,7 @@
   background: transparent;
   position: absolute;
   width: 100%;
+  z-index: 1;
   .container {
     max-width: 1440px;
     width: 100%;
@@ -31,6 +32,9 @@
         font-weight: 500;
         line-height: 140%;
         text-decoration: none;
+        &:hover{
+          color: #E54D24;
+        }
       }
     }
   }

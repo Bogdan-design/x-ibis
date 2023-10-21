@@ -1,6 +1,6 @@
 import React from 'react';
 import {whatWeDoData} from "@/lid/data";
-import s from './card.module.scss'
+import s from 'component/servises/card/card.module.scss'
 
 type ProjectProps = (typeof whatWeDoData)[number]
 
