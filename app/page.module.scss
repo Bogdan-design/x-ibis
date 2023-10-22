@@ -17,7 +17,6 @@
       gap: 16px;
 
 
-
       .link {
         display: flex;
         align-items: center;
@@ -39,7 +38,9 @@
     }
 
     .options {
-      scroll-behavior: smooth;
+      li {
+
+      }
     }
   }
 }

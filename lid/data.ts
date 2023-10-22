@@ -39,7 +39,7 @@ export const whatWeDoData = [
         link: '/security'
     },
     {
-        title: 'Page Reliability infra',
+        title: 'Ensuring Reliability infra',
         description: 'Our specialty lies in creating a dependable IT framework for efficient operations.',
         icon: createElement(Modules),
         link: '/ensuring'
