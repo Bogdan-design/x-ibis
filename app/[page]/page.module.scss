@@ -1,13 +1,14 @@
 .main {
   display: flex;
   justify-content: center;
-
+  height: 100vh;
   .container {
     max-width: 1440px;
     width: 100%;
-    padding: 140px 165px 0;
+
+    padding: 140px 165px;
     display: flex;
-    gap: 10%;
+    justify-content: space-between;
 
     .titleContainer {
       display: flex;
@@ -23,6 +24,7 @@
         color: #514E4E;
         text-decoration: none;
         gap: 16px;
+        padding: 30px 0;
 
         .button {
           border: 1px solid #E75934;
@@ -34,12 +36,12 @@
           border-radius: 100px;
         }
       }
-
     }
-
     .options {
-      li {
-
+      overflow: scroll;
+      max-width: 635px;
+      width: auto;
+      .list{
       }
     }
   }

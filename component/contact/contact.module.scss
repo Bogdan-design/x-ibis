@@ -8,17 +8,17 @@
     width: 100%;
     display: inline-flex;
     padding: 120px 165px;
-    align-items: flex-start;
-    gap: 95px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     .text {
       display: flex;
       flex-direction: column;
-
+      max-width: 540px;
+      width: 100%;
       gap: 36px;
 
       .title {
-
         color: #333;
         font-size: 24px;
         font-style: normal;
@@ -27,7 +27,6 @@
         text-transform: uppercase;
         align-self: stretch;
         margin: 0;
-
       }
 
       .description {
@@ -49,6 +48,9 @@
           color: #333;
           font-size: 16px;
           text-transform: lowercase;
+          a{
+            color: #514E4E;
+          }
         }
         flex-direction: column;
         gap: 24px;
@@ -57,26 +59,11 @@
 
     .form {
       display: flex;
-      width: 475px;
+      max-width: 475px;
+      width: 100%;
       flex-direction: column;
       align-items: flex-start;
       gap: 48px;
-
-      input,
-      label,
-      textarea {
-        width: 100%;
-        background: none;
-        border: none;
-        border-bottom: 1px solid #333333;
-
-
-        &:active {
-          border: none;
-
-        }
-      }
-
     }
   }
 }

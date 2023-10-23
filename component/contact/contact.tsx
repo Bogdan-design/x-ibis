@@ -4,6 +4,8 @@ import {SubmitBtm} from "@/component/contact/submitBtm";
 import Call from '@/assest/icon/call'
 import Location from '@/assest/icon/location'
 import Sms from '@/assest/icon/sms'
+import {TextField} from "@mui/material";
+import {sendEmail} from "@/actions/sendEmail";
 import s from './contact.module.scss'
 
 export const Contact = () => {
@@ -21,7 +23,7 @@ export const Contact = () => {
                     </p>
                     <div className={s.ourContact}>
                         <p>
-                            <Sms/><span>info@x-ibis.com</span>
+                            <Sms/><a href={'mailto:info@x-ibis.com'}>info@x-ibis.com</a>
                         </p>
                         <p>
                             <Call/><span>+48 694 670 955</span>
@@ -31,33 +33,51 @@ export const Contact = () => {
                         </p>
                     </div>
                 </div>
-                    <form className={s.form} action={ (formData) => {
-                        // await sendEmail(formData)
-                    }}>
-                        <input name='senderNname'
-                               id={'text'}
-                               type='text'
-                               maxLength={500}
-                               placeholder='name'
-                               required/>
-
-                        <input name='senderEmail'
-                               type='email'
-                               maxLength={500}
-                               placeholder='email'
-                               required/>
-
-                        <input name='phoneNumber'
-                               type='phone'
-                               maxLength={15}
-                               placeholder='Phone number'
-                        />
-                        <textarea name='message'
-                                  placeholder='Your message'
-                                  maxLength={5000}
-                                  required/>
-                        <SubmitBtm/>
-                    </form>
+                <form className={s.form} action={async (formData) => {
+                    await sendEmail(formData)}}
+                >
+                    <TextField sx={{maxHeight:'100%'}}
+                        name='senderNname'
+                        id='text'
+                        label="Name"
+                        type='text'
+                        placeholder='Name'
+                        variant="standard"
+                        required
+                        fullWidth
+                    />
+                    <TextField sx={{maxHeight:'100%'}}
+                        name='senderEmail'
+                        id='email'
+                        label='Email'
+                        type='email'
+                        placeholder='Email'
+                        variant="standard"
+                        required
+                        fullWidth
+                    />
+                    <TextField
+                        name='senderPhone'
+                        id='phone'
+                        label='Phone'
+                        type='phone'
+                        placeholder='Phone'
+                        variant="standard"
+                        fullWidth
+                    />
+                    <TextField
+                        name='senderMessage'
+                        id='message'
+                        label='Message'
+                        type='Message'
+                        placeholder='Message'
+                        rows={4}
+                        variant="standard"
+                        required
+                        fullWidth
+                    />
+                    <SubmitBtm/>
+                </form>
             </div>
         </section>
     );

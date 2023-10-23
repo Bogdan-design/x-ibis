@@ -13,9 +13,7 @@ export const Services = () => {
                     <h2 className={s.title}>What we do</h2>
                     <div className={s.cards}>
                         {whatWeDoData.map((s, i) => (
-                            <React.Fragment key={i}>
-                                <Card {...s}/>
-                            </React.Fragment>
+                                <Card key={i} {...s}/>
                         ))}
                     </div>
                 </div>
