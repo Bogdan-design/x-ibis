@@ -1,7 +1,7 @@
 'use client'
 import {useState} from 'react';
 import Global from "@/assest/icon/global";
-import s from './menu.module.scss'
+import s from 'component/menu/menu.module.scss'
 
 export const Menu = () => {
     const [local, setLocal] = useState<string>('en');

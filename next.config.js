@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+const { i18n } = require('next-i18next.config.ts')
+
 const nextConfig = {
+
 
     webpack(config) {
         // Grab the existing rule that handles SVG imports
@@ -35,6 +39,8 @@ const nextConfig = {
     experimental:{
         serverActions:true
     },
+    i18n
+
 
 }
 

@@ -7,6 +7,7 @@ import Sms from '@/assest/icon/sms'
 import {TextField} from "@mui/material";
 import {sendEmail} from "@/actions/sendEmail";
 import s from './contact.module.scss'
+import toast from "react-hot-toast";
 
 export const Contact = () => {
     return (
@@ -34,7 +35,12 @@ export const Contact = () => {
                     </div>
                 </div>
                 <form className={s.form} action={async (formData) => {
-                    await sendEmail(formData)}}
+                   const {data,error} = await sendEmail(formData)
+                if(error){
+                    toast.error(error)
+                }
+                return toast.success('Email send successfully')
+                }}
                 >
                     <TextField sx={{maxHeight:'100%'}}
                         name='senderNname'

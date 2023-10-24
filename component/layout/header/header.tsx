@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '@/assest/icon/logo'
 import {links} from "@/lid/data";
 import Link from "next/link";
-import {Menu} from "@/common/menu/menu";
+import {Menu} from "@/component/menu/menu";
 import s from './header.module.scss'
 
 export const Header = () => {

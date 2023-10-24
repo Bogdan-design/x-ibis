@@ -3,7 +3,6 @@ import s from './homePage.module.scss'
 import {Button} from "@/component/ui/button";
 import abstraction from "@/assest/icon/abstraction.png";
 import Image from "next/image";
-import Link from "next/link";
 
 export const HomePage = () => {
     return (
@@ -22,7 +21,7 @@ export const HomePage = () => {
 
                 <div className={s.description}>
                     <h1 className={s.title}>We will make your IT infrastructure reliable, modern and secure.</h1>
-                    <Button as={'a'} href={'/#contact'}>Get in Touch</Button>
+                    <Button as={'a'} variant={'link'} href={'/#contact'}>Get in Touch</Button>
                 </div>
             </div>
         </section>
