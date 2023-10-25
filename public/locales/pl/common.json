@@ -1,0 +1,37 @@
+
+{
+  "Home page title": "Sprawimy, że Twoja infrastruktura IT będzie niezawodna, nowoczesna i bezpieczna.",
+  "Home page button": "Skontaktuj się",
+  "pageTitle": "Rewizja IT",
+  "pageDescription": "Umożliwiamy firmom pełne zrozumienie i usprawnienie ich systemów informatycznych.",
+  "options": [
+    {
+      "title": "Analiza infrastruktury",
+      "description": "Ocena aktualnego stanu infrastruktury IT, w tym sprzętu, oprogramowania, topologii sieci i zasobów chmurowych."
+    },
+    {
+      "title": "Bezpieczeństwo i podatności",
+      "description": "Przeprowadź skan podatności oraz analizę systemów zabezpieczeń, w tym uwierzytelnianie, autoryzację, szyfrowanie i ochronę danych."
+    },
+    {
+      "title": "Zgodność z przepisami",
+      "description": "Upewnij się, że firma przestrzega odpowiednich przepisów branżowych i standardów zabezpieczeń danych (np. RODO, HIPAA) zależnie od obszaru działalności."
+    },
+    {
+      "title": "Kopie zapasowe i przywracanie",
+      "description": "Ocen strategie tworzenia kopii zapasowych danych i plany przywracania, aby systemy można było przywrócić w przypadku awarii."
+    },
+    {
+      "title": "Infrastruktura sieciowa",
+      "description": "Analiza architektury sieci, wydajności, segmentacji, zarządzania ruchem i bezpieczeństwa."
+    },
+    {
+      "title": "Procesy i wydajność",
+      "description": "Badanie procesów biznesowych i ich dopasowania do systemów informatycznych, identyfikacja wąskich gardeł i sugestie dotyczące optymalizacji wydajności."
+    },
+    {
+      "title": "Zarządzanie zasobami",
+      "description": "Analiza wykorzystania zasobów IT, takich jak serwery, magazyn danych, licencje oprogramowania w celu optymalizacji kosztów."
+    }
+  ]
+}

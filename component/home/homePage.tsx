@@ -1,10 +1,14 @@
+'use client'
 import React from 'react';
-import s from './homePage.module.scss'
 import {Button} from "@/component/ui/button";
 import abstraction from "@/assest/icon/abstraction.png";
 import Image from "next/image";
+import '@/common/local'
+import {useTranslation} from "next-i18next";
+import s from './homePage.module.scss'
 
 export const HomePage = () => {
+  const {t} = useTranslation()
     return (
         <section id='home' className={s.homePage}>
                 <Image style={{
@@ -18,10 +22,9 @@ export const HomePage = () => {
                     backgroundRepeat: 'no-repeat'
                 }} src={abstraction} alt={''}/>
             <div className={s.container}>
-
-                <div className={s.description}>
-                    <h1 className={s.title}>We will make your IT infrastructure reliable, modern and secure.</h1>
-                    <Button as={'a'} variant={'link'} href={'/#contact'}>Get in Touch</Button>
+                <div className={s.description} >
+                    <h1 className={s.title}>{t('Home page title')}</h1>
+                    <Button as={'a'} variant={'link'} href={'/#contact'}>{t('Home page button')}</Button>
                 </div>
             </div>
         </section>

@@ -1,0 +1,36 @@
+{
+  "Home page title": "Wir machen Ihre IT-Infrastruktur zuverlässig, modern und sicher.",
+  "Home page button": "In Kontakt kommen",
+  "pageTitle": "IT Audit",
+  "pageDescription": "Wir ermöglichen Unternehmen, ihre Informationssysteme vollständig zu erfassen und zu verbessern.",
+  "options": [
+    {
+      "title": "Infrastrukturanalyse",
+      "description": "Bewertung des aktuellen Zustands der IT-Infrastruktur, einschließlich Hardware, Software, Netzwerktopologie und Cloud-Ressourcen."
+    },
+    {
+      "title": "Sicherheit und Schwachstellen",
+      "description": "Führen Sie einen Schwachstellen-Scan durch und analysieren Sie Sicherheitssysteme, einschließlich Authentifizierung, Autorisierung, Verschlüsselung und Datenschutz."
+    },
+    {
+      "title": "Regulatorische Compliance",
+      "description": "Stellen Sie sicher, dass das Unternehmen den relevanten Branchenvorschriften und Datenschutzstandards (z.B. DSGVO, HIPAA) je nach Geschäftsbereich entspricht."
+    },
+    {
+      "title": "Backup und Wiederherstellung",
+      "description": "Bewerten Sie Strategien zur Datensicherung und Wiederherstellung, um sicherzustellen, dass Systeme im Falle von Ausfällen wiederhergestellt werden können."
+    },
+    {
+      "title": "Netzwerkinfrastruktur",
+      "description": "Analyse der Netzwerkarchitektur, Leistung, Segmentierung, Verkehrsverwaltung und Sicherheit."
+    },
+    {
+      "title": "Prozesse und Leistung",
+      "description": "Untersuchung von Geschäftsprozessen und ihrer Abstimmung auf IT-Systeme, Identifizierung von Engpässen und Vorschläge zur Optimierung der Leistung."
+    },
+    {
+      "title": "Ressourcenmanagement",
+      "description": "Analyse der Nutzung von IT-Ressourcen wie Servern, Datenspeicher und Softwarelizenzen zur Kostenoptimierung."
+    }
+  ]
+}

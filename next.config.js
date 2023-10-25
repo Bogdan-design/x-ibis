@@ -1,6 +1,10 @@
-/** @type {import('next').NextConfig} */
+// @ts-check
+const { i18n } = require('./next-i18next.config.ts')
+const { loadCustomBuildParams } = require('./next-utils.config')
+const { esmExternals = false, tsconfigPath } =
+    loadCustomBuildParams()
 
-const { i18n } = require('next-i18next.config.ts')
+/** @type {import('next').NextConfig} */
 
 const nextConfig = {
 
@@ -10,6 +14,7 @@ const nextConfig = {
         const fileLoaderRule = config.module.rules.find((rule) =>
             rule.test?.test?.('.svg'),
         )
+
 
         config.module.rules.push(
             // Reapply the existing rule, but only for svg imports ending in ?url
@@ -24,9 +29,7 @@ const nextConfig = {
                 issuer: /\.[jt]sx?$/,
                 resourceQuery: { not: /url/ }, // exclude if *.svg?url
                 use: ['@svgr/webpack'],
-            },
-
-
+            }
 
         )
 
@@ -37,11 +40,13 @@ const nextConfig = {
         return config
     },
     experimental:{
+        esmExternals,
         serverActions:true
+    },i18n,
+    reactStrictMode: true,
+    typescript: {
+        tsconfigPath,
     },
-    i18n
-
-
 }
 
 module.exports = nextConfig

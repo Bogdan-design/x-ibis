@@ -1,34 +1,44 @@
 'use client'
 import {useState} from 'react';
 import Global from "@/assest/icon/global";
+import i18next from "i18next";
+import {Constants} from "@/common/local/constants";
 import s from 'component/menu/menu.module.scss'
 
 export const Menu = () => {
-    const [local, setLocal] = useState<string>('en');
     const [isOpen, setIsOpen] = useState(false);
-
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
 
-    const onLocalHandler = (newLocal:string) => {
-        setLocal(newLocal)
-        setIsOpen(!isOpen)
+    const onLocalHandler = async (newLocal: Constants) => {
+        try {
+            await i18next.changeLanguage(newLocal);
+            setIsOpen(!isOpen);
+        } catch (error) {
+            console.error("Error changing language:", error);
+        }
     }
 
     return (
-        <div className={s.container}>
-            <button  onClick={toggleDropdown}  className={s.button}>
+        <section className={s.container} suppressHydrationWarning={true}>
+            <button onClick={toggleDropdown} className={s.button}>
                 <Global className={s.icon}/>
             </button>
             {isOpen && (
-                <ul  className={s.list}>
-                    <li onClick={()=>onLocalHandler('en')}>EN</li>
-                    <li onClick={()=>onLocalHandler('de')}>DE</li>
-                    <li onClick={()=>onLocalHandler('pl')}>PL</li>
+                <ul className={s.list}>
+                    <li className={i18next.language === Constants.EN ? s.active : ''}
+                        onClick={() => onLocalHandler(Constants.EN)}>EN
+                    </li>
+                    <li className={i18next.language === Constants.DE ? s.active : ''}
+                        onClick={() => onLocalHandler(Constants.DE)}>DE
+                    </li>
+                    <li className={i18next.language === Constants.PL ? s.active : ''}
+                        onClick={() => onLocalHandler(Constants.PL)}>PL
+                    </li>
                 </ul>
             )}
-        </div>
+        </section>
     );
 };

@@ -1,12 +1,12 @@
 import {HomePage} from "@/component/home/homePage";
 import {Services} from "@/component/servises/services";
-import s from './main.module.scss'
 import {About} from "@/component/about/about";
 import {Certification} from "@/component/certification/certification";
 import {Contact} from "@/component/contact/contact";
 import {Footer} from "@/component/footer/footer";
+import s from './main.module.scss'
 
-export default function Home() {
+function Home() {
     return (
         <main className={s.main}>
             <HomePage/>
@@ -18,3 +18,5 @@ export default function Home() {
         </main>
     )
 }
+
+export default Home

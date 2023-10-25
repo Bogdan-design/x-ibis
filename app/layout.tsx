@@ -6,6 +6,7 @@ import {Header} from "@/component/layout/header/header";
 import {Toaster} from "react-hot-toast";
 import 'overlayscrollbars/overlayscrollbars.css'
 
+
 const inter = Inter({subsets: ['latin']})
 
 export const metadata: Metadata = {
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     description: 'We will make your IT infrastructure reliable, modern and secure.',
 }
 
-export default function RootLayout({children}: { children: ReactNode}) {
+export default function RootLayout({children}: { children: ReactNode }) {
     return (
         <html lang="en">
         <body className={`${inter.className}`}>
@@ -26,3 +27,4 @@ export default function RootLayout({children}: { children: ReactNode}) {
         </html>
     )
 }
+

@@ -10,8 +10,9 @@ import {useScrollbar} from "@/lid/hooks/hooks";
 import s from './page.module.scss'
 
 
-export default function Page({params}: { params: { page: string } }) {
 
+
+export default function Page({params}: { params: { page: string } }) {
 
     const wrapper = useRef(null)
 
@@ -39,7 +40,6 @@ export default function Page({params}: { params: { page: string } }) {
             break;
         default:
             return <PageError/>
-
     }
 
 
@@ -51,7 +51,6 @@ export default function Page({params}: { params: { page: string } }) {
                     <Back className={s.button}/><span>Back to Services</span>
                 </Link>
             </div>
-
             <div className={s.options} ref={wrapper}>
                     <div className={s.list} >
                         {pagesData[dataIndex].options.map((o, i) => (
