@@ -1,14 +1,16 @@
 import React from 'react';
-import {pagesData} from "@/lid/data";
 import s from "./heading.module.scss";
+import {useTranslation} from "next-i18next";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
-type pageData = (typeof pagesData)[number]
+type pageData = {page:string}
 
-export const Heading = ({pageTitle,pageDescription}:pageData) => {
+export const Heading = ({page}:pageData) => {
+    const {t} = useTranslation()
     return (
-        <>
-            <h2 className={s.title}>{pageTitle}</h2>
-            <p className={s.description}>{pageDescription}</p>
-        </>
+        <div>
+            <h2 className={s.title}>{t(`${page}.pageTitle`)}</h2>
+            <p className={s.description}>{t(`${page}.pageDescription`)}</p>
+        </div>
     );
 };

@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Global from "@/assest/icon/global";
 import i18next from "i18next";
 import {Constants} from "@/common/local/constants";
-import s from 'component/menu/menu.module.scss'
+import s from './menu.module.scss'
 
 export const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +11,7 @@ export const Menu = () => {
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
+
 
     const onLocalHandler = async (newLocal: Constants) => {
         try {
@@ -20,6 +21,7 @@ export const Menu = () => {
             console.error("Error changing language:", error);
         }
     }
+
 
     return (
         <section className={s.container} suppressHydrationWarning={true}>

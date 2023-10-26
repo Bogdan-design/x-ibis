@@ -7,12 +7,13 @@ import {Heading} from "@/common/heading/heading";
 import {Content} from "@/common/content/content";
 import {PageError} from "@/common/errors/error404";
 import {useScrollbar} from "@/lid/hooks/hooks";
+import {useTranslation} from "next-i18next";
 import s from './page.module.scss'
 
 
-
-
 export default function Page({params}: { params: { page: string } }) {
+
+    const {t,i18n}=useTranslation()
 
     const wrapper = useRef(null)
 
@@ -46,9 +47,9 @@ export default function Page({params}: { params: { page: string } }) {
     return <section className={s.main}>
         <div className={s.container}>
             <div className={s.titleContainer}>
-                <Heading {...pagesData[dataIndex]}/>
+                <Heading {...pagesData[dataIndex]} page={page}/>
                 <Link href={'/#services'} className={s.link}>
-                    <Back className={s.button}/><span>Back to Services</span>
+                    <Back  className={s.button}/><span>{t('Back to Services')}</span>
                 </Link>
             </div>
             <div className={s.options} ref={wrapper}>

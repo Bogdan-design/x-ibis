@@ -6,7 +6,7 @@ import {Contact} from "@/component/contact/contact";
 import {Footer} from "@/component/footer/footer";
 import s from './main.module.scss'
 
-function Home() {
+export default function Home() {
     return (
         <main className={s.main}>
             <HomePage/>
@@ -19,4 +19,11 @@ function Home() {
     )
 }
 
-export default Home
+
+// import { appWithTranslation } from 'next-i18next'
+//
+// const Home = ({ Component, pageProps }) => (
+//     <Component {...pageProps} />
+// )
+//
+// export default appWithTranslation(Home)
