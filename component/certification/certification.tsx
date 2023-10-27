@@ -3,19 +3,20 @@ import Cisco from "@/assest/icon/cisco";
 import aws from '@/assest/icon/aws.png'
 import Image from "next/image";
 import s from './certification.module.scss'
+import {Typography} from "@/component/ui/typography/typography";
 
 export const Certification = () => {
     return (
         <section className={s.certification}>
             <div className={s.container}>
                 <div className={s.text}>
-                    <h2 className={s.title}>
+                    <Typography>
                         All of our employees are certified professionals.
-                    </h2>
-                    <p className={s.deskription}>
+                    </Typography>
+                    <Typography variant={'text'}>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Our team boasts deep expertise in navigating today's complex information environment. We understand that a solid infrastructure is the foundation of business success.
-                    </p>
+                    </Typography>
                 </div>
                 <div className={s.images}>
                     <Cisco/>

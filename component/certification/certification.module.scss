@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 32px;
     .text{
       display: flex;
       width: 540px;
@@ -16,19 +17,6 @@
       align-items: flex-start;
       flex-wrap: wrap;
       gap: 32px;
-      .title{
-        align-self: stretch;
-        color: #333;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        text-transform: uppercase;
-
-      }
-      .description{
-
-      }
     }
     .images{
       display: flex;

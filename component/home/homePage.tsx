@@ -5,8 +5,8 @@ import abstraction from "@/assest/icon/abstraction.png";
 import Image from "next/image";
 import '@/common/local'
 import {useTranslation} from "next-i18next";
-import s from './homePage.module.scss'
 import {monumentExtended} from "@/fonts/fonts";
+import s from './homePage.module.scss'
 
 export const HomePage = () => {
   const {t} = useTranslation()

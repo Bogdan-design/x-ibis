@@ -8,42 +8,56 @@ import {TextField} from "@mui/material";
 import {sendEmail} from "@/actions/sendEmail";
 import s from './contact.module.scss'
 import toast from "react-hot-toast";
+import {Typography} from "@/component/ui/typography/typography";
+import {BDO_Grotesk, monumentExtended} from "@/fonts/fonts";
 
 export const Contact = () => {
+
+    // const theme = {
+    //     color: '#333',
+    //     fontFamily: BDO_Grotesk.style,
+    //     fontSize: '30px',
+    //     fontStyle: 'normal',
+    //     fontWeight: '500',
+    //     lineHeight: '165%',
+    //     maxHeight: '100%',
+    // } as const
+
     return (
         <section id={'contact'} className={s.contact}>
             <div className={s.container}>
                 <div className={s.text}>
-                    <h2 className={s.title}>
+                    <Typography>
                         Get in touch
-                    </h2>
-                    <p className={s.description}>
+                    </Typography>
+                    <Typography variant={'text'}>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Get in touch to learn more about our IT infrastructure services
                         and how we can help you achieve your business goal.
-                    </p>
+                    </Typography>
                     <div className={s.ourContact}>
-                        <p>
+                        <div>
                             <Sms/><a href={'mailto:info@x-ibis.com'}>info@x-ibis.com</a>
-                        </p>
-                        <p>
-                            <Call/><span>+48 694 670 955</span>
-                        </p>
-                        <p>
-                            <Location/><span>Warsaw, Poland</span>
-                        </p>
+                        </div>
+                        <div>
+                            <Call/><Typography variant={'text'}>+48 694 670 955</Typography>
+                        </div>
+                        <div>
+                            <Location/><Typography variant={'text'}>Warsaw, Poland</Typography>
+                        </div>
                     </div>
                 </div>
                 <form className={s.form} action={async (formData) => {
-                   const {data,error} = await sendEmail(formData)
-                if(error){
-                    toast.error(error)
-                }
-                return toast.success('Email send successfully')
+                    const {data, error} = await sendEmail(formData)
+                    if (error) {
+                        toast.error(error)
+                    }
+                    return toast.success('Email send successfully')
                 }}
                 >
-                    <TextField sx={{maxHeight:'100%'}}
+                    <TextField
                         name='senderNname'
+                        size='medium'
                         id='text'
                         label="Name"
                         type='text'
@@ -52,18 +66,19 @@ export const Contact = () => {
                         required
                         fullWidth
                     />
-                    <TextField sx={{maxHeight:'100%'}}
-                        name='senderEmail'
-                        id='email'
-                        label='Email'
-                        type='email'
-                        placeholder='Email'
-                        variant="standard"
-                        required
-                        fullWidth
+                    <TextField size='medium'
+                               name='senderEmail'
+                               id='email'
+                               label='Email'
+                               type='email'
+                               placeholder='Email'
+                               variant="standard"
+                               required
+                               fullWidth
                     />
                     <TextField
                         name='senderPhone'
+                        size='medium'
                         id='phone'
                         label='Phone'
                         type='phone'
@@ -73,6 +88,7 @@ export const Contact = () => {
                     />
                     <TextField
                         name='senderMessage'
+                        size='medium'
                         id='message'
                         label='Message'
                         type='Message'
@@ -82,7 +98,7 @@ export const Contact = () => {
                         required
                         fullWidth
                     />
-                    <SubmitBtm/>
+                    <SubmitBtm style={BDO_Grotesk.style} className={s.submit}/>
                 </form>
             </div>
         </section>

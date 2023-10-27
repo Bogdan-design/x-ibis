@@ -10,6 +10,7 @@
     padding: 120px 165px;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 
     .text {
       display: flex;
@@ -18,42 +19,19 @@
       width: 100%;
       gap: 36px;
 
-      .title {
-        color: #333;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        text-transform: uppercase;
-        align-self: stretch;
-        margin: 0;
-      }
-
-      .description {
-        margin: 0;
-        align-self: stretch;
-        color: #514E4E;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 165%;
-      }
-
       .ourContact {
         display: flex;
-        p{
+        flex-direction: column;
+        gap: 24px;
+        div {
           display: flex;
           align-items: center;
           margin: 0;
-          gap:16px;
-          color: #333;
-          font-size: 16px;
-          text-transform: lowercase;
-          a{
+          gap: 16px;
+          a {
             color: #514E4E;
           }
         }
-        flex-direction: column;
-        gap: 24px;
       }
     }
 
@@ -63,7 +41,13 @@
       width: 100%;
       flex-direction: column;
       align-items: flex-start;
-      gap: 48px;
+      gap:16px;
+      div{
+        height: 65px;
+      }
+      .submit{
+        margin-top: 32px;
+      }
     }
   }
 }

@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {CSSProperties} from 'react';
 import {Button} from "@/component/ui/button";
 // @ts-ignore
 import {experimental_useFormStatus as useFormStatus} from 'react-dom'
 
-export const SubmitBtm = () => {
+export const SubmitBtm = ({className,style}:{className?:string,
+style?:CSSProperties}) => {
     const {pending} = useFormStatus()
     return (
-        <Button type={'submit'}
+        <Button style={style} className={className} type={'submit'}
                 disabled={pending}
                 fullWidth
         >

@@ -2,6 +2,7 @@ import React from 'react';
 import {whatWeDoData} from "@/lid/data";
 import {Card} from "@/component/servises/card/card";
 import {Clients} from "@/component/clients/clients";
+import {Typography} from "@/component/ui/typography/typography";
 import s from './services.module.scss'
 
 export const Services = () => {
@@ -10,7 +11,7 @@ export const Services = () => {
             <Clients/>
             <div className={s.container}>
                 <div className={s.description}>
-                    <h2 className={s.title}>What we do</h2>
+                    <Typography>What we do</Typography>
                     <div className={s.cards}>
                         {whatWeDoData.map((s, i) => (
                                 <Card key={i} {...s}/>

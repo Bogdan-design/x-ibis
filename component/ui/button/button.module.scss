@@ -7,31 +7,36 @@
   cursor: pointer;
 
 
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
 
+  display: flex;
+  max-width: 215px;
+  width: 100%;
   padding: 16px 40px;
+  gap: 8px;
+
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
+  font-style: normal;
+  line-height: 140%;
 
-  background: #E75934;
+  background: $background;
   border: none;
 
   &:hover {
-    background: #F16B48;
+    background: $hoverBackground;
   }
 
   &:disabled {
     cursor: default;
-    opacity: 0.5;
     background: $disabledBackground;
   }
 
-  &:active:enabled {
+  &:active {
     background: $activeBackground;
   }
 }
@@ -39,8 +44,8 @@
 .primary {
   @include button(
                   #E75934,
-                  #E54D24,
-                  #F16B48,
+                  #A93719,
+                  #D34721,
                   #EC957E
   );
 

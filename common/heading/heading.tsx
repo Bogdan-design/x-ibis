@@ -1,16 +1,25 @@
-import React from 'react';
-import s from "./heading.module.scss";
+import React, {CSSProperties} from 'react';
 import {useTranslation} from "next-i18next";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import {Typography} from "@/component/ui/typography/typography";
+import s from './heading.module.scss'
 
-type pageData = {page:string}
+type pageData = { page: string }
 
-export const Heading = ({page}:pageData) => {
+export const Heading = ({page}: pageData) => {
     const {t} = useTranslation()
+
+    const theme:CSSProperties = {
+        display: "flex",
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        gap: '16px',
+    }
+
+
     return (
-        <div>
-            <h2 className={s.title}>{t(`${page}.pageTitle`)}</h2>
-            <p className={s.description}>{t(`${page}.pageDescription`)}</p>
+        <div style={theme}>
+            <Typography>{t(`${page}.pageTitle`)}</Typography>
+            <Typography className={s.description} variant={'text'}>{t(`${page}.pageDescription`)}</Typography>
         </div>
     );
 };

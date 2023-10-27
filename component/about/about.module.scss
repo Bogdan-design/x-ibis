@@ -11,26 +11,31 @@
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 
     .title {
-      margin: 0;
-      width: 379px;
-      color: #333;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 140%;
-      text-transform: uppercase;
+      max-width: 379px;
     }
 
     .description {
-      width: 635px;
+      max-width: 635px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 48px;
-      .titleDescription{
+      gap: 36px;
+
+
+      .titleDescription {
         margin: 0;
+      }
+
+      .text {
+        min-height: 232px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 12px;
       }
     }
   }

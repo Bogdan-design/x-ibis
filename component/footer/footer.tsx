@@ -13,21 +13,19 @@ export const Footer = () => {
             <div className={s.container}>
                 <Logo style={{width: '90px', height: '18px'}}/>
                 <div className={s.options}>
-                    <nav>
-                        <ul className={s.links}>
+                    <nav className={s.links}>
                             {links.map(l => (
                                 <Link className={s.link} key={l.hash} href={l.hash}>
                                     {l.name}
                                 </Link>)
                             )}
-                        </ul>
                     </nav>
                     <Link href={'https://www.linkedin.com/company/x-ibis'}>
                         {/*<Linkedin/>*/}
                         <Image src={linkedin} alt={''}/>
                     </Link>
                     <Link href={'/#home'} className={s.button}>
-                        <Arrow/>
+                        <Arrow className={s.up}/>
                     </Link>
                 </div>
             </div>

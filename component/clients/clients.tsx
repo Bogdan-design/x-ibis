@@ -4,6 +4,7 @@ import nodral from '@/assest/icon/nodral.png'
 import times from '@/assest/icon/tines.png'
 import Image from "next/image";
 import s from './clients.module.scss'
+import {monumentExtended} from "@/fonts/fonts";
 
 
 export const Clients = () => {
@@ -11,7 +12,7 @@ export const Clients = () => {
         <section className={s.clients}>
             <div className={s.container}>
                 <div className={s.description}>
-                    <p className={s.quantity}>100+</p>
+                    <p style={monumentExtended.style} className={s.quantity}>100+</p>
                     <p className={s.text}>have been serviced
                         by our company</p>
                 </div>

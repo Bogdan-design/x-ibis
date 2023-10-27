@@ -25,7 +25,30 @@
         color: #514E4E;
         text-decoration: none;
         gap: 16px;
-        padding: 60px 0;
+        margin-top: 60px;
+
+        &:hover {
+          .button {
+            background-color: #E75934;
+            stroke: #FFFFFF;
+          }
+
+          .titleLink {
+            color: #E75934;
+          }
+        }
+
+        &:active {
+          .button {
+            border: 1px solid #A93719;
+            background-color: #A93719;
+            stroke: #FFFFFF;
+          }
+
+          .titleLink {
+            color: #A93719;
+          }
+        }
 
         .button {
           border: 1px solid #E75934;
@@ -34,7 +57,9 @@
           width: 40px;
           height: 40px;
           padding: 8px;
-          border-radius: 100px;
+          border-radius: 50%;
+          stroke: #E75934;
+
         }
       }
     }
@@ -44,7 +69,6 @@
       padding: 0 0 0 30px;
 
       .list {
-
       }
     }
   }
