@@ -1,10 +1,10 @@
-import {useEffect} from "react";
+import {RefObject, useEffect} from "react";
 import {OverlayScrollbars} from 'overlayscrollbars'
 
 
 const config = {}
 
-export const useScrollbar = (root:any) => {
+export const useScrollbar = (root:RefObject<HTMLDivElement>) => {
     useEffect(() => {
         let scrollbars: OverlayScrollbars
         if (root && root.current) {

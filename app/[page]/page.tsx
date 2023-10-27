@@ -8,13 +8,13 @@ import {Content} from "@/common/content/content";
 import {PageError} from "@/common/errors/error404";
 import {useScrollbar} from "@/lid/hooks/hooks";
 import {useTranslation} from "next-i18next";
-import s from './page.module.scss'
 import {Typography} from "@/component/ui/typography/typography";
+import s from './page.module.scss'
 
 
 export default function Page({params}: { params: { page: string } }) {
 
-    const {t}=useTranslation()
+    // const {t,i18n}=useTranslation()
 
     const wrapper = useRef(null)
 
@@ -50,15 +50,16 @@ export default function Page({params}: { params: { page: string } }) {
             <div className={s.titleContainer}>
                 <Heading {...pagesData[dataIndex]} page={page}/>
                 <Link href={'/#services'} className={s.link}>
-                    <Back className={s.button}/><Typography className={s.titleLink} as={'span'} variant={"text"}>{t('Back to Services')}</Typography>
+                    <Back className={s.button}/>
+                    <Typography className={s.titleLink} as={'span'} variant={"text"}>{('Back to Services')}</Typography>
                 </Link>
             </div>
             <div className={s.options} ref={wrapper}>
-                    <div className={s.list} >
-                        {pagesData[dataIndex].options.map((o, i) => (
-                            <Content key={i} {...o}/>
-                        ))}
-                    </div>
+                <div className={s.list}>
+                    {pagesData[dataIndex].options.map((o, i) => (
+                        <Content key={i} {...o}/>
+                    ))}
+                </div>
             </div>
         </div>
     </section>
