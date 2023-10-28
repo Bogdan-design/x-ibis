@@ -10,13 +10,13 @@ module.exports = {
         defaultLocale: 'en',
         locales: ['en', 'de','pl'],
     },
-    /** To avoid issues when deploying to some paas (vercel...) */
-    localePath:
-        typeof window === 'undefined'
-            ? require('path').resolve('./public/locales')
-            : '/locales',
-
-    reloadOnPrerender: process.env.NODE_ENV === 'development',
+    // /** To avoid issues when deploying to some paas (vercel...) */
+    // localePath:
+    //     typeof window === 'undefined'
+    //         ? require('path').resolve('./locales')
+    //         : '/locales',
+    //
+    // reloadOnPrerender: process.env.NODE_ENV === 'development',
 
 
 }

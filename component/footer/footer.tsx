@@ -1,3 +1,4 @@
+'use client'
 import Logo from "@/assest/icon/logo";
 import {links} from "@/lid/data";
 import Link from "next/link";
@@ -6,8 +7,10 @@ import linkedin from "@/assest/icon/linkedin.png";
 import React from "react";
 import Image from "next/image";
 import s from './footer.module.scss'
+import {useTranslation} from "next-i18next";
 
 export const Footer = () => {
+    const {t} = useTranslation()
     return (
         <footer className={s.footer}>
             <div className={s.container}>
@@ -16,7 +19,7 @@ export const Footer = () => {
                     <nav className={s.links}>
                             {links.map(l => (
                                 <Link className={s.link} key={l.hash} href={l.hash}>
-                                    {l.name}
+                                    {t(`${l.name}`)}
                                 </Link>)
                             )}
                     </nav>

@@ -1,21 +1,23 @@
+'use client'
 import React from 'react';
 import Cisco from "@/assest/icon/cisco";
 import aws from '@/assest/icon/aws.png'
 import Image from "next/image";
 import s from './certification.module.scss'
 import {Typography} from "@/component/ui/typography/typography";
+import {useTranslation} from "next-i18next";
 
 export const Certification = () => {
+    const {t} = useTranslation()
     return (
         <section className={s.certification}>
             <div className={s.container}>
                 <div className={s.text}>
                     <Typography>
-                        All of our employees are certified professionals.
+                        {t('employees')}
                     </Typography>
                     <Typography variant={'text'}>
-                        {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        Our team boasts deep expertise in navigating today's complex information environment. We understand that a solid infrastructure is the foundation of business success.
+                        {t('boasts expertise')}
                     </Typography>
                 </div>
                 <div className={s.images}>

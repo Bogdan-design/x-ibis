@@ -1,8 +1,29 @@
 {
+  "Home": "Strona glówna",
+  "Services": "Usługi",
+  "About": "O nas",
+  "Contact": "Kontakt",
   "Home page title": "Sprawimy, że Twoja infrastruktura IT będzie niezawodna, nowoczesna i bezpieczna.",
   "Home page button": "Skontaktuj się",
   "Back to Services": "Powrót do usług",
+  "have been": "byli obsługiwani przez naszą firmę",
+  "What we do": "Co robimy",
+  "We specialize": "Specjalizujemy się w infrastrukturze IT i bezpieczeństwie.",
+  "Our mission": "Nasza misja to rozwijanie i utrzymywanie nowoczesnych rozwiązań technologicznych, zapewniających niezawodność, efektywność i ochronę.",
+  "experienced": "Jesteśmy doświadczoną firmą zajmującą się infrastrukturą IT i bezpieczeństwem, napędzaną innowacjami od pierwszego dnia.",
+  "collaborate": "Ścisła współpraca z naszymi klientami, tworzenie spersonalizowanych rozwiązań idealnie dopasowanych do ich celów i potrzeb.",
+  "Our team": "Nasz zespół może poszczycić się głęboką wiedzą w nawigowaniu dzisiejszym skomplikowanym środowiskiem informacyjnym. Rozumiemy, że solidna infrastruktura stanowi fundament sukcesu biznesowego.",
+  "employees": "Wszyscy nasi pracownicy to certyfikowani profesjonaliści.",
+  "boasts expertise": "Nasz zespół posiada głęboką wiedzę w nawigowaniu w dzisiejszym skomplikowanym środowisku informacyjnym. Rozumiemy, że solidna infrastruktura stanowi fundament sukcesu biznesowego.",
+  "contact text": "Skontaktuj się, aby dowiedzieć się więcej o naszych usługach z zakresu infrastruktury IT i jak możemy pomóc Ci osiągnąć cele biznesowe.",
+  "formName": "Imię",
+  "formEmail": "Email",
+  "formPhone": "Telefon",
+  "formMessage": "Wiadomość",
+  "Sent": "Wysłane",
   "audit": {
+    "title": "Bezpieczeństwo",
+    "description": "Skoncentrowani na ochronie Twojego biznesu, oferujemy kompleksowe rozwiązania z zakresu cyberbezpieczeństwa.",
     "pageTitle": "Rewizja IT",
     "pageDescription": "Umożliwiamy firmom pełne zrozumienie i usprawnienie ich systemów informatycznych.",
     "options": [
@@ -37,6 +58,8 @@
     ]
   },
   "security": {
+    "title": "Zapewnienie niezawodności infrastruktury",
+    "description": "Nasza specjalność polega na tworzeniu niezawodnej infrastruktury informatycznej dla efektywnych operacji.",
     "pageTitle": "Bezpieczeństwo",
     "pageDescription": "Oferujemy kompleksowe rozwiązania do wykrywania, zapobiegania i reagowania na zagrożenia związane z cyberprzestępczością.",
     "options": [
@@ -75,6 +98,8 @@
     ]
   },
   "ensuring": {
+    "title": "Administracja IT",
+    "description": "Nasza profesjonalna administracja IT utrzymuje Twoje technologie w doskonałym stanie.",
     "pageTitle": "Zabezpieczenie niezawodności infrastruktury",
     "pageDescription": "Nasza specjalizacja polega na tworzeniu niezawodnej infrastruktury IT dla efektywnych operacji.",
     "options": [
@@ -117,6 +142,8 @@
     ]
   },
   "administration": {
+    "title": "Nowoczesne Rozwiązania",
+    "description": "Specjalizujemy się w rozwiązaniach biznesowych nowej generacji, optymalizujemy efektywność.",
     "pageTitle": "Administracja IT",
     "pageDescription": "Nasza profesjonalna administracja IT zapewnia płynne działanie Twojej technologii.",
     "options": [
@@ -155,6 +182,8 @@
     ]
   },
   "solution": {
+    "title": "Nowoczesne Rozwiązania",
+    "description": "Specjalizujemy się w rozwiązaniach biznesowych nowej generacji, optymalizujemy efektywność. Klienci have been obsługiwani by our company.",
     "pageTitle": "Nowoczesne Rozwiązania",
     "pageDescription": "Specjalizujemy się w zaawansowanych rozwiązaniach biznesowych, optymalizujemy efektywność.",
     "options": [

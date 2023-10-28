@@ -1,8 +1,32 @@
 {
+  "Home": "Home",
+  "Services": "Services",
+  "About": "About",
+  "Contact": "Contact",
   "Home page title": "We will make your IT infrastructure reliable, modern and secure",
   "Home page button": "Get in Touch",
   "Back to Services": "Back to Services",
+  "have been": "have been serviced by our company",
+  "What we do": "What we do",
+  "We specialize": "We specialize in IT infrastructure and security.",
+  "Our mission": "Our mission to develop and uphold cutting-edge tech solutions, ensuring reliability, efficiency, and protection.",
+  "experienced": "We're an experienced IT infrastructure and security firm, driven by innovation since day one.",
+  "collaborate": "We collaborate closely with our clients, crafting personalized solutions that align perfectly with their goals and needs.",
+  "Our team": "Our team boasts deep expertise in navigating today's complex information environment. We understand that a solid infrastructure is the foundation of business success.",
+  "employees": "All of our employees are certified professionals.",
+  "boasts expertise": "Our team boasts deep expertise in navigating today's complex information environment. We understand that a solid infrastructure is the foundation of business success.",
+  "contact text": "Get in touch to learn more about our IT infrastructure services and how we can help you achieve your business goal.",
+  "formName": "Name",
+  "formEmail": "Email",
+  "formPhone": "Phone",
+  "formMessage": "Message",
+  "Sent": "Sent",
+
+
+
   "audit": {
+    "title": "IT Audit",
+    "description": "We enable busineses to fully grasp and enhance their information systems.",
     "pageTitle": "IT Audit",
     "pageDescription": "We enable businesses to fully grasp and enhance their information systems.",
     "options": [
@@ -37,6 +61,8 @@
     ]
   },
   "security": {
+    "title": "Security",
+    "description": "Focused on safeguarding your business, we offer complex cyber security solutions.",
     "pageTitle": "Security",
     "pageDescription": "We offer comprehensive solutions to detect, prevent, and respond to cyber threats.",
     "options": [
@@ -75,6 +101,8 @@
     ]
   },
   "ensuring": {
+    "title": "Ensuring Reliability infra",
+    "description": "Our specialty lies in creating a dependable IT framework for efficient operations.",
     "pageTitle": "Ensuring Reliability Infrastructure",
     "pageDescription": "Our specialty lies in creating a dependable IT framework for efficient operations.",
     "options": [
@@ -117,6 +145,8 @@
     ]
   },
   "administration": {
+    "title": "IT Administration",
+    "description": "Our professional IT administration keeps your tech running smoothly.",
     "pageTitle": "IT Administration",
     "pageDescription": "Our professional IT administration keeps your tech running smoothly.",
     "options": [
@@ -155,6 +185,8 @@
     ]
   },
   "solution": {
+    "title": "Modern Solutions",
+    "description": "Specializing in next-level business solutions, we optimize efficiency.",
     "pageTitle": "Modern Solutions",
     "pageDescription": "Specializing in next-level business solutions, we optimize efficiency.",
     "options": [

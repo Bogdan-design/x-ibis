@@ -14,7 +14,7 @@ import s from './page.module.scss'
 
 export default function Page({params}: { params: { page: string } }) {
 
-    // const {t,i18n}=useTranslation()
+    const {t}=useTranslation()
 
     const wrapper = useRef(null)
 
@@ -51,7 +51,7 @@ export default function Page({params}: { params: { page: string } }) {
                 <Heading {...pagesData[dataIndex]} page={page}/>
                 <Link href={'/#services'} className={s.link}>
                     <Back className={s.button}/>
-                    <Typography className={s.titleLink} as={'span'} variant={"text"}>{('Back to Services')}</Typography>
+                    <Typography className={s.titleLink} as={'span'} variant={"text"}>{t('Back to Services')}</Typography>
                 </Link>
             </div>
             <div className={s.options} ref={wrapper}>

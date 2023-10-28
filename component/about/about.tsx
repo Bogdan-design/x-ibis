@@ -1,38 +1,34 @@
+'use client'
 import React from 'react';
 import {Button} from "@/component/ui/button";
 import s from './about.module.scss'
 import {Typography} from "@/component/ui/typography/typography";
+import {useTranslation} from "next-i18next";
 
 export const About = () => {
+    const {t} = useTranslation()
     return (
         <section id={'about'} className={s.about}>
             <div className={s.container}>
                 <Typography className={s.title}>
-                    We specialize in
-                    IT infrastructure and security.
+                    {t('We specialize')}
                 </Typography>
                 <div className={s.description}>
                     <h3 className={s.titleDescription}>
-                        Our mission to develop and uphold cutting-edge tech solutions, ensuring reliability, efficiency,
-                        and
-                        protection.
+                        {t('Our mission')}
                     </h3>
                     <div className={s.text}>
                         <Typography variant={"text"}>
-                            {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            We're a experienced IT infrastructure and security firm, driven by innovation since day one.
+                            {t('experienced')}
                         </Typography>
                         <Typography variant={'text'}>
-                            We collaborate closely with our clients, crafting personalized solutions
-                            that align perfectly with their goals and needs.
+                            {t('collaborate')}
                         </Typography>
                         <Typography variant={'text'}>
-                            {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            Our team boasts deep expertise in navigating today's complex information environment. We
-                            understand that a solid infrastructure is the foundation of business success.
+                            {t('Our team')}
                         </Typography>
                     </div>
-                    <Button as={'a'} href={'#contact'}>Get in Touch</Button>
+                    <Button as={'a'} href={'#contact'}>{t('Home page button')}</Button>
                 </div>
             </div>
         </section>

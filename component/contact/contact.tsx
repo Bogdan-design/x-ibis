@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, {useEffect} from 'react';
 import {SubmitBtm} from "@/component/contact/submitBtm";
 import Call from '@/assest/icon/call'
 import Location from '@/assest/icon/location'
@@ -10,21 +10,26 @@ import toast from "react-hot-toast";
 import {Typography} from "@/component/ui/typography/typography";
 import {BDO_Grotesk} from "@/fonts/fonts";
 import s from './contact.module.scss'
+import {useTranslation} from "next-i18next";
 
 export const Contact = () => {
 
+const {t} = useTranslation()
+
+
+    const nameLabel =() =>{
+   return t('Name')
+}
 
     return (
         <section id={'contact'} className={s.contact}>
             <div className={s.container}>
                 <div className={s.text}>
                     <Typography>
-                        Get in touch
+                        {t('Home page button')}
                     </Typography>
                     <Typography variant={'text'}>
-                        {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        Get in touch to learn more about our IT infrastructure services
-                        and how we can help you achieve your business goal.
+                        {t('contact text')}
                     </Typography>
                     <div className={s.ourContact}>
                         <div>
@@ -48,11 +53,10 @@ export const Contact = () => {
                 >
                     <TextField
                         name='senderNname'
-
                         id='text'
-                        label="Name"
+                        label={t('formName')}
                         type='text'
-                        placeholder='Name'
+                        placeholder={t('formName')}
                         variant="standard"
                         required
                         fullWidth
@@ -60,9 +64,9 @@ export const Contact = () => {
                     <TextField
                                name='senderEmail'
                                id='email'
-                               label='Email'
+                               label={t('formEmail')}
                                type='email'
-                               placeholder='Email'
+                               placeholder={t('formEmail')}
                                variant="standard"
                                required
                                fullWidth
@@ -70,18 +74,18 @@ export const Contact = () => {
                     <TextField name='senderPhone'
 
                         id='phone'
-                        label='Phone'
+                        label={t('formPhone')}
                         type='phone'
-                        placeholder='Phone'
+                        placeholder={t('formPhone')}
                         variant="standard"
                         fullWidth
                     />
                     <TextField name='senderMessage'
 
                         id='message'
-                        label='Message'
+                        label={t('formMessage')}
                         type='Message'
-                        placeholder='Message'
+                        placeholder={t('formMessage')}
                         rows={4}
                         variant="standard"
                         required
