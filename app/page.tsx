@@ -4,11 +4,10 @@ import {About} from "@/component/about/about";
 import {Certification} from "@/component/certification/certification";
 import {Contact} from "@/component/contact/contact";
 import {Footer} from "@/component/footer/footer";
-import s from './main.module.scss'
 
 export default function Home() {
     return (
-        <main className={s.main}>
+        <main>
             <HomePage/>
             <Services/>
             <About/>
