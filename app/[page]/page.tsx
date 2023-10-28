@@ -57,7 +57,7 @@ export default function Page({params}: { params: { page: string } }) {
             <div className={s.options} ref={wrapper}>
                 <div className={s.list}>
                     {pagesData[dataIndex].options.map((o, i) => (
-                        <Content key={i} {...o}/>
+                        <Content key={i} index={i} page={page} {...o}/>
                     ))}
                 </div>
             </div>
