@@ -40,7 +40,7 @@ let data
         data = await resend.emails.send({
             from: 'Contact form <onboarding@resend.dev>',
             to: ['info@x-ibis.com'],
-            subject: 'Message from I-IBIS form',
+            subject: 'Message from X-IBIS form',
             reply_to: email as string,
             react: React.createElement(ContactFormEmail,{
                 message:message as string,

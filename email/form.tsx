@@ -21,7 +21,7 @@ type ContactFormEmailPropsType={
 export const ContactFormEmail : FC<ContactFormEmailPropsType> = ({message,senderEmail,phone}) => {
     return<Html>
         <Head/>
-        <Preview>New message from your I-IBIS site</Preview>
+        <Preview>New message from your X-IBIS site</Preview>
         <Tailwind>
             <Body className='bg-gray-100 text-black'>
                 <Container>

@@ -6,8 +6,8 @@ import Arrow from "@/assest/icon/arrow";
 import linkedin from "@/assest/icon/linkedin.png";
 import React from "react";
 import Image from "next/image";
-import s from './footer.module.scss'
 import {useTranslation} from "next-i18next";
+import s from './footer.module.scss'
 
 export const Footer = () => {
     const {t} = useTranslation()

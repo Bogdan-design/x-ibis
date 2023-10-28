@@ -7,6 +7,7 @@ import Image from "next/image";
 import s from './clients.module.scss'
 import {monumentExtended} from "@/fonts/fonts";
 import {useTranslation} from "next-i18next";
+import GalaInvest from "@/assest/icon/galaInvest";
 
 
 export const Clients = () => {
@@ -20,7 +21,7 @@ export const Clients = () => {
                     <p style={monumentExtended.style} className={s.quantity}>100+</p>
                     <p className={s.text}>{t('have been')}</p>
                 </div>
-                <Image src={galaInvest} style={{backgroundColor: 'none'}} alt={'gala-invest'} width={'163'}
+                <Image src={'https://galeinvest.pl/wp-content/themes/newgale/images/logo.svg'} style={{backgroundColor: 'none'}} alt={'gala-invest'} width={'163'}
                        height={'60'}/>
                 <Image src={times} alt={'times'} width={'126'} height={'36'}/>
                 <Image src={nodral} width={'192'} height={'36'} alt={'nodral'}/>
