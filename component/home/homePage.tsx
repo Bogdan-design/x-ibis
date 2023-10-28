@@ -3,7 +3,7 @@ import React from 'react';
 import {Button} from "@/component/ui/button";
 import abstraction from "@/assest/icon/abstraction.png";
 import Image from "next/image";
-import '@/common/local'
+import '@/common/local/i18n'
 import {useTranslation} from "next-i18next";
 import {monumentExtended} from "@/fonts/fonts";
 import s from './homePage.module.scss'

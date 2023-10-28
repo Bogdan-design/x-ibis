@@ -21,7 +21,6 @@ export const Footer = () => {
                             )}
                     </nav>
                     <Link href={'https://www.linkedin.com/company/x-ibis'}>
-                        {/*<Linkedin/>*/}
                         <Image src={linkedin} alt={''}/>
                     </Link>
                     <Link href={'/#home'} className={s.button}>

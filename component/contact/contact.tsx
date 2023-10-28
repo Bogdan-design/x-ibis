@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React from 'react';
 import {SubmitBtm} from "@/component/contact/submitBtm";
 import Call from '@/assest/icon/call'
@@ -6,22 +6,13 @@ import Location from '@/assest/icon/location'
 import Sms from '@/assest/icon/sms'
 import {TextField} from "@mui/material";
 import {sendEmail} from "@/actions/sendEmail";
-import s from './contact.module.scss'
 import toast from "react-hot-toast";
 import {Typography} from "@/component/ui/typography/typography";
-import {BDO_Grotesk, monumentExtended} from "@/fonts/fonts";
+import {BDO_Grotesk} from "@/fonts/fonts";
+import s from './contact.module.scss'
 
 export const Contact = () => {
 
-    // const theme = {
-    //     color: '#333',
-    //     fontFamily: BDO_Grotesk.style,
-    //     fontSize: '30px',
-    //     fontStyle: 'normal',
-    //     fontWeight: '500',
-    //     lineHeight: '165%',
-    //     maxHeight: '100%',
-    // } as const
 
     return (
         <section id={'contact'} className={s.contact}>
@@ -48,7 +39,7 @@ export const Contact = () => {
                     </div>
                 </div>
                 <form className={s.form} action={async (formData) => {
-                    const {data, error} = await sendEmail(formData)
+                    const {error} = await sendEmail(formData)
                     if (error) {
                         toast.error(error)
                     }
@@ -57,7 +48,7 @@ export const Contact = () => {
                 >
                     <TextField
                         name='senderNname'
-                        size='medium'
+
                         id='text'
                         label="Name"
                         type='text'
@@ -66,7 +57,7 @@ export const Contact = () => {
                         required
                         fullWidth
                     />
-                    <TextField size='medium'
+                    <TextField
                                name='senderEmail'
                                id='email'
                                label='Email'
@@ -76,9 +67,8 @@ export const Contact = () => {
                                required
                                fullWidth
                     />
-                    <TextField
-                        name='senderPhone'
-                        size='medium'
+                    <TextField name='senderPhone'
+
                         id='phone'
                         label='Phone'
                         type='phone'
@@ -86,9 +76,8 @@ export const Contact = () => {
                         variant="standard"
                         fullWidth
                     />
-                    <TextField
-                        name='senderMessage'
-                        size='medium'
+                    <TextField name='senderMessage'
+
                         id='message'
                         label='Message'
                         type='Message'
@@ -98,7 +87,7 @@ export const Contact = () => {
                         required
                         fullWidth
                     />
-                    <SubmitBtm style={BDO_Grotesk.style} className={s.submit}/>
+                    <SubmitBtm font={BDO_Grotesk.style} className={s.submit}/>
                 </form>
             </div>
         </section>

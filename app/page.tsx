@@ -18,12 +18,3 @@ export default function Home() {
         </main>
     )
 }
-
-
-// import { appWithTranslation } from 'next-i18next'
-//
-// const Home = ({ Component, pageProps }) => (
-//     <Component {...pageProps} />
-// )
-//
-// export default appWithTranslation(Home)
