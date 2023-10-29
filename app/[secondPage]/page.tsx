@@ -1,7 +1,7 @@
 'use client'
 import Back from "@/assest/icon/back";
 import Link from "next/link";
-import React, {useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import {pagesData} from "@/lid/data";
 import {Heading} from "@/common/heading/heading";
 import {Content} from "@/common/content/content";
@@ -10,12 +10,15 @@ import {useScrollbar} from "@/lid/hooks/hooks";
 import {useTranslation} from "next-i18next";
 import {Typography} from "@/component/ui/typography/typography";
 import s from './page.module.scss'
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 
 export default function Page({params:{secondPage}}: { params: { secondPage: string } }) {
 
-    const {t,ready}=useTranslation()
+    const {t,ready,i18n}=useTranslation(['common'],{ bindI18n: 'languageChanged loaded' })
+    useEffect(() => {
+        i18n.reloadResources(i18n.resolvedLanguage, ['common'],)
+    }, [])
+
 
     const wrapper = useRef(null)
 
@@ -69,3 +72,4 @@ export default function Page({params:{secondPage}}: { params: { secondPage: stri
         </div>
     </section>
 }
+

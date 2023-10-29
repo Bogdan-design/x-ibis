@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Button} from "@/component/ui/button";
 import abstraction from "@/assest/icon/abstraction.png";
 import Image from "next/image";
@@ -10,7 +10,12 @@ import {Typography} from "@/component/ui/typography/typography";
 import s from './homePage.module.scss'
 
 export const HomePage = () => {
-  const {t} = useTranslation()
+    const {t,ready,i18n}=useTranslation()
+    useEffect(() => {
+        i18n.reloadResources(i18n.resolvedLanguage, ['common'],)
+    }, [])
+
+    if (!ready) return 'loading translations...'
     return (
         <section id='home' className={s.homePage}>
                 <Image style={{

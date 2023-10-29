@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'We will make your IT infrastructure reliable, modern and secure.',
 }
 
-export default function RootLayout({children}: { children: ReactNode }) {
+export default function RootLayout({children}: { children: ReactNode}) {
     return (
         <html lang={Constants.EN}>
         <body className={`${BDO_Grotesk.className}`}>
