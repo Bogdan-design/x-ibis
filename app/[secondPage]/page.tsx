@@ -12,7 +12,7 @@ import {Typography} from "@/component/ui/typography/typography";
 import s from './page.module.scss'
 
 
-export default function Page({params}: { params: { page: string } }) {
+export default function Page({params:{secondPage}}: { params: { secondPage: string } }) {
 
     const {t}=useTranslation()
 
@@ -20,11 +20,10 @@ export default function Page({params}: { params: { page: string } }) {
 
     useScrollbar(wrapper)
 
-    const {page} = params
 
     let dataIndex
 
-    switch (page) {
+    switch (secondPage) {
         case 'audit':
             dataIndex = 0;
             break;
@@ -48,16 +47,19 @@ export default function Page({params}: { params: { page: string } }) {
     return <section className={s.main}>
         <div className={s.container}>
             <div className={s.titleContainer}>
-                <Heading {...pagesData[dataIndex]} page={page}/>
+                <Heading {...pagesData[dataIndex]} page={secondPage}/>
                 <Link href={'/#services'} className={s.link}>
                     <Back className={s.button}/>
-                    <Typography className={s.titleLink} as={'span'} variant={"text"}>{t('Back to Services')}</Typography>
+                    <Typography className={s.titleLink}
+                                as={'span'}
+                                variant={"text"}>{t('Back to Services')}
+                    </Typography>
                 </Link>
             </div>
             <div className={s.options} ref={wrapper}>
                 <div className={s.list}>
                     {pagesData[dataIndex].options.map((o, i) => (
-                        <Content key={i} index={i} page={page} {...o}/>
+                        <Content key={i} index={i} page={secondPage} {...o}/>
                     ))}
                 </div>
             </div>

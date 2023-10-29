@@ -4,7 +4,7 @@ import galaInvest from '@/assest/icon/gala-invest.png'
 import nodral from '@/assest/icon/nodral.png'
 import times from '@/assest/icon/tines.png'
 import Image from "next/image";
-import s from './clients.module.scss'
+import s from 'component/servises/clients/clients.module.scss'
 import {monumentExtended} from "@/fonts/fonts";
 import {useTranslation} from "next-i18next";
 import GalaInvest from "@/assest/icon/galaInvest";
