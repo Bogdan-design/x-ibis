@@ -4,6 +4,7 @@ import {About} from "@/component/about/about";
 import {Certification} from "@/component/certification/certification";
 import {Contact} from "@/component/contact/contact";
 import {Footer} from "@/component/footer/footer";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function Home() {
     return (

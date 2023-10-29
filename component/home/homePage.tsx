@@ -6,6 +6,7 @@ import Image from "next/image";
 import '@/common/local/i18n'
 import {useTranslation} from "next-i18next";
 import {monumentExtended} from "@/fonts/fonts";
+import {Typography} from "@/component/ui/typography/typography";
 import s from './homePage.module.scss'
 
 export const HomePage = () => {
@@ -25,7 +26,7 @@ export const HomePage = () => {
                 }} src={abstraction} alt={''}/>
             <div className={s.container}>
                 <div className={s.description} >
-                    <h1 style={monumentExtended.style} className={s.title}>{t('Home page title')}</h1>
+                    <Typography as={'h1'} style={monumentExtended.style} className={s.title}>{t('Home page title')}</Typography>
                     <Button  as={'a'} variant={'link'} href={'/#contact'}>{t('Home page button')}</Button>
                 </div>
             </div>

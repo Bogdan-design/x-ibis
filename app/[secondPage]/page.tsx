@@ -10,11 +10,12 @@ import {useScrollbar} from "@/lid/hooks/hooks";
 import {useTranslation} from "next-i18next";
 import {Typography} from "@/component/ui/typography/typography";
 import s from './page.module.scss'
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 
 export default function Page({params:{secondPage}}: { params: { secondPage: string } }) {
 
-    const {t}=useTranslation()
+    const {t,ready}=useTranslation()
 
     const wrapper = useRef(null)
 
@@ -42,6 +43,8 @@ export default function Page({params:{secondPage}}: { params: { secondPage: stri
         default:
             return <PageError/>
     }
+
+    if (!ready) return 'loading translations...'
 
 
     return <section className={s.main}>

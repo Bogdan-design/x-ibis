@@ -23,6 +23,8 @@ export const Menu = () => {
     }
 
 
+
+
     return (
         <section className={s.container} suppressHydrationWarning={true}>
             <button onClick={toggleDropdown} className={s.button}>
