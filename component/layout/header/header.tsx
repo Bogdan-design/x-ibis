@@ -1,14 +1,19 @@
 'use client'
-import React from 'react';
+import React, {useEffect} from 'react';
 import Logo from '@/assest/icon/logo'
 import {links} from "@/lid/data";
 import Link from "next/link";
 import {Menu} from "@/component/menu/menu";
 import {useTranslation} from "next-i18next";
+import i18n from "i18next";
 import s from './header.module.scss'
 
 export const Header = () => {
     const {t}=useTranslation()
+    useEffect(() => {
+        i18n.reloadResources(i18n.resolvedLanguage, ['common'],)
+    }, [])
+
     return (
         <header className={s.header}>
             <div className={s.container}>
