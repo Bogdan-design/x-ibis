@@ -9,9 +9,7 @@ import s from './header.module.scss'
 
 export const Header = () => {
     const {t}=useTranslation()
-    // useEffect(() => {
-    //     i18n.reloadResources(i18n.resolvedLanguage, ['common'],)
-    // }, [])
+
 
     return (
         <header className={s.header}>

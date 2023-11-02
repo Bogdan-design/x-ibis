@@ -12,7 +12,7 @@ import {Typography} from "@/component/ui/typography/typography";
 import s from './page.module.scss'
 
 
-export default function Page({params:{secondPage}}: { params: { secondPage: string } }) {
+function Page({params:{secondPage}}: { params: { secondPage: string } }) {
 
     const {t,ready,i18n}=useTranslation(['common'],{ bindI18n: 'languageChanged loaded' })
     useEffect(() => {
@@ -73,3 +73,6 @@ export default function Page({params:{secondPage}}: { params: { secondPage: stri
     </section>
 }
 
+
+
+export default Page
