@@ -1,7 +1,7 @@
 'use client'
 import Back from "@/assest/icon/back";
 import Link from "next/link";
-import React, {useEffect, useRef} from "react";
+import React, {useRef} from "react";
 import {pagesData} from "@/lid/data";
 import {Heading} from "@/common/heading/heading";
 import {Content} from "@/common/content/content";
@@ -14,7 +14,7 @@ import s from './page.module.scss'
 
 function Page({params:{services}}: { params: { services: string } }) {
 
-    const {t}=useTranslation()
+    const {t, ready}=useTranslation()
 
 
     const wrapper = useRef(null)
@@ -43,6 +43,8 @@ function Page({params:{services}}: { params: { services: string } }) {
         default:
             return <PageError/>
     }
+
+    if(!ready)return <div>Loading...</div>
 
 
 

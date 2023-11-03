@@ -1,5 +1,5 @@
 'use client'
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import Global from "@/assest/icon/global";
 import i18next from "i18next";
 import {Constants} from "@/common/local/constants";
