@@ -1,5 +1,5 @@
 "use client"
-import React, {useEffect} from 'react';
+import React from 'react';
 import {SubmitBtm} from "@/component/contact/submitBtm";
 import Call from '@/assest/icon/call'
 import Location from '@/assest/icon/location'
@@ -9,17 +9,12 @@ import {sendEmail} from "@/actions/sendEmail";
 import toast from "react-hot-toast";
 import {Typography} from "@/component/ui/typography/typography";
 import {BDO_Grotesk} from "@/fonts/fonts";
-import s from './contact.module.scss'
 import {useTranslation} from "next-i18next";
+import s from './contact.module.scss'
 
 export const Contact = () => {
 
-const {t} = useTranslation()
-
-
-    const nameLabel =() =>{
-   return t('Name')
-}
+    const {t}=useTranslation()
 
     return (
         <section id={'contact'} className={s.contact}>

@@ -9,7 +9,8 @@ export const SubmitBtm = ({className, font}: {
     font?: CSSProperties
 }) => {
     const {pending} = useFormStatus()
-   const {t} = useTranslation()
+    const {t}=useTranslation()
+
     return (
         <Button style={font} className={className} type={'submit'}
                 disabled={pending}

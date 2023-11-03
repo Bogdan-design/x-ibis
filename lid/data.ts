@@ -233,7 +233,7 @@ export const pagesData = [
                 },
                 {
                     title: 'Internet of Things (IoT)',
-                    description: 'Integrate devices and sensors to collect real-time data to optimize production, manage resources, and improve services.'
+                    description: 'Integrate devices and sensors to collect real-time data to optimize production, manage resources, and improve [services].'
                 },
                 {
                     title: 'Cybersecurity and Data Protection',

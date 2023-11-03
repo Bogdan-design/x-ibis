@@ -6,7 +6,8 @@ import {Typography} from "@/component/ui/typography/typography";
 import {useTranslation} from "next-i18next";
 
 export const About = () => {
-    const {t} = useTranslation()
+    const {t}=useTranslation()
+
     return (
         <section id={'about'} className={s.about}>
             <div className={s.container}>

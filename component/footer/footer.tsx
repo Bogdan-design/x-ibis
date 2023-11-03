@@ -10,7 +10,8 @@ import {useTranslation} from "next-i18next";
 import s from './footer.module.scss'
 
 export const Footer = () => {
-    const {t} = useTranslation()
+    const {t}=useTranslation()
+
     return (
         <footer className={s.footer}>
             <div className={s.container}>

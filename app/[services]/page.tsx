@@ -12,7 +12,7 @@ import {Typography} from "@/component/ui/typography/typography";
 import s from './page.module.scss'
 
 
-function Page({params:{secondPage}}: { params: { secondPage: string } }) {
+function Page({params:{services}}: { params: { services: string } }) {
 
     const {t,ready,i18n}=useTranslation(['common'],{ bindI18n: 'languageChanged loaded' })
     useEffect(() => {
@@ -27,7 +27,7 @@ function Page({params:{secondPage}}: { params: { secondPage: string } }) {
 
     let dataIndex
 
-    switch (secondPage) {
+    switch (services) {
         case 'audit':
             dataIndex = 0;
             break;
@@ -53,8 +53,8 @@ function Page({params:{secondPage}}: { params: { secondPage: string } }) {
     return <section className={s.main}>
         <div className={s.container}>
             <div className={s.titleContainer}>
-                <Heading {...pagesData[dataIndex]} page={secondPage}/>
-                <Link href={'/#services'} className={s.link}>
+                <Heading {...pagesData[dataIndex]} page={services}/>
+                <Link href={'/#[services]'} className={s.link}>
                     <Back className={s.button}/>
                     <Typography className={s.titleLink}
                                 as={'span'}
@@ -65,7 +65,7 @@ function Page({params:{secondPage}}: { params: { secondPage: string } }) {
             <div className={s.options} ref={wrapper}>
                 <div className={s.list}>
                     {pagesData[dataIndex].options.map((o, i) => (
-                        <Content key={i} index={i} page={secondPage} {...o}/>
+                        <Content key={i} index={i} page={services} {...o}/>
                     ))}
                 </div>
             </div>
