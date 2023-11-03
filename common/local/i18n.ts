@@ -19,8 +19,7 @@ const resources ={
 }
 
 const getLng =()=>{
-   const lng : string = localStorage.getItem('i18nextLng') || Constants.EN
-    return lng
+    return String(localStorage.getItem('i18nextLng')) || Constants.EN
 }
 
 

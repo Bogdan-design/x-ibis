@@ -14,10 +14,7 @@ import s from './page.module.scss'
 
 function Page({params:{services}}: { params: { services: string } }) {
 
-    const {t,ready,i18n}=useTranslation(['common'],{ bindI18n: 'languageChanged loaded' })
-    useEffect(() => {
-        i18n.reloadResources(i18n.resolvedLanguage, ['common'],)
-    }, [])
+    const {t}=useTranslation()
 
 
     const wrapper = useRef(null)
@@ -47,7 +44,7 @@ function Page({params:{services}}: { params: { services: string } }) {
             return <PageError/>
     }
 
-    if (!ready) return 'loading translations...'
+
 
 
     return <section className={s.main}>

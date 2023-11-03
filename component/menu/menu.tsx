@@ -8,14 +8,6 @@ import s from './menu.module.scss'
 export const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    useEffect(() => {
-
-        const newLocal: string | null = localStorage.getItem('i18nextLng')
-        if (newLocal) {
-
-            i18next.changeLanguage(newLocal)
-        }
-    }, [])
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);

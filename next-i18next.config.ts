@@ -1,4 +1,5 @@
 // next-i18next.config.js
+
 const LocizeBackend = require('i18next-locize-backend/cjs')
 const ChainedBackend= require('i18next-chained-backend').default
 const LocalStorageBackend = require('i18next-localstorage-backend').default
@@ -12,7 +13,7 @@ module.exports = {
 
     debug: process.env.NODE_ENV === 'development',
     i18n: {
-        defaultLocale: 'en',
+        defaultLocale:'en',
         locales: ['en', 'de','pl'],
     },
 
