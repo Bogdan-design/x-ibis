@@ -31,8 +31,8 @@ module.exports = {
     /** To avoid issues when deploying to some paas (vercel...) */
     localePath:
         typeof window === 'undefined'
-            ? require('path').resolve('./locales')
-            : '/locales',
+            ? require('path').resolve('./services')
+            : '/services',
 
     reloadOnPrerender: process.env.NODE_ENV === 'development',
 
