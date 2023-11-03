@@ -18,7 +18,7 @@ const resources ={
     }
 }
 
-const getLng =()=>{
+const getLng = ()=>{
     return String(localStorage.getItem('i18nextLng')) || Constants.EN
 }
 
