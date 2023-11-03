@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
 import en from '@/public/locales/en/common.json'
@@ -19,16 +19,16 @@ const resources ={
     }
 }
 
-const getLng = ()=>{
-    return String(localStorage.getItem('i18nextLng')) || Constants.EN
-}
-
+// const getLng = ()=>{
+//     return String(localStorage.getItem('i18nextLng')) || Constants.EN
+// }
+//
 
 i18n
     .use(initReactI18next)
     .init({
         resources,
-        fallbackLng: getLng(),
+        fallbackLng: Constants.EN,
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
         }
