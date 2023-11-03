@@ -14,9 +14,9 @@ export const Menu = () => {
     };
 
 
-    const onLocalHandler = async (newLocal: Constants) => {
+    const onLocalHandler =(newLocal: Constants) => {
         try {
-            await i18next.changeLanguage(newLocal);
+            i18next.changeLanguage(newLocal);
             localStorage.setItem('i18nextLng',newLocal)
             setIsOpen(!isOpen);
         } catch (error) {
