@@ -18,12 +18,13 @@ const resources ={
     }
 }
 
+// String(localStorage.getItem('i18nextLng')) ||
 
 i18n
     .use(initReactI18next)
     .init({
         resources,
-        fallbackLng: String(localStorage.getItem('i18nextLng')) || Constants.EN,
+        fallbackLng:Constants.EN,
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
         }
