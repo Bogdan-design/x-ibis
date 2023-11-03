@@ -11,6 +11,7 @@ import s from './homePage.module.scss'
 
 export const HomePage =() => {
     const {t}=useTranslation()
+
     return (
         <section id='home' className={s.homePage}>
                 <Image style={{

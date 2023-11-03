@@ -11,7 +11,6 @@ export const Header = () => {
     const {t}=useTranslation()
 
 
-
     return (
         <header className={s.header}>
             <div className={s.container}>
