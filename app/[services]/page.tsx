@@ -1,7 +1,7 @@
 'use client'
 import Back from "@/assest/icon/back";
 import Link from "next/link";
-import React, {useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import {pagesData} from "@/lid/data";
 import {Heading} from "@/common/heading/heading";
 import {Content} from "@/common/content/content";
@@ -12,9 +12,13 @@ import {Typography} from "@/component/ui/typography/typography";
 import s from './page.module.scss'
 
 
+
 function Page({params:{services}}: { params: { services: string } }) {
 
-    const {t, ready}=useTranslation()
+
+
+
+    const {t,ready}=useTranslation(['common'],{ bindI18n: 'languageChanged loaded' })
 
 
     const wrapper = useRef(null)

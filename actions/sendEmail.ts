@@ -4,9 +4,7 @@ import {Resend} from "resend";
 import {getErrorMessage, validateString} from "@/lid/utils/utils";
 import {ContactFormEmail} from "@/email/form";
 
-interface EmailTemplateProps {
-    firstName: string;
-}
+
 
 const resend = new Resend(process.env.RESENT_API_KEY)
 
