@@ -1,8 +1,6 @@
 'use client'
 import React from 'react';
 import {Button} from "@/component/ui/button";
-import abstraction from "@/assest/icon/abstraction.png";
-import Image from "next/image";
 import '@/common/local/i18n'
 import {useTranslation} from "next-i18next";
 import {monumentExtended} from "@/fonts/fonts";
@@ -14,17 +12,6 @@ export const HomePage =() => {
 
     return (
         <section id='home' className={s.homePage}>
-                <Image style={{
-                    zIndex: '-1',
-                    position: "absolute",
-                    maxWidth:'100vw',
-                    width: '100%', height: '100%',
-                    backgroundColor: 'lightgray',
-                    opacity: '85%',
-                    backgroundSize: 'auto',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
-                }} src={abstraction} alt={''}/>
             <div className={s.container}>
                 <div className={s.description} >
                     <Typography as={'h1'} style={monumentExtended.style} className={s.title}>{t('Home page title')}</Typography>
